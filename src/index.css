@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-5xl;
+}
+
+h2 {
+  @apply text-3xl;
+}
+
+/* flip card effect */
+.flip {
+  @apply relative select-none;
+
+  > .front,
+  > .back {
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.8s;
+    transition-property: transform, opacity;
+  }
+  > .front {
+    transform: rotateY(0deg);
+  }
+  > .back {
+    @apply absolute left-0 top-0 h-full w-full opacity-0;
+    transform: rotateY(-180deg);
+  }
+  &:hover {
+    > .front {
+      transform: rotateY(180deg);
+    }
+    > .back {
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+}
+
+/* extra styles */
+.front,
+.back {
+  @apply flex flex-col items-center gap-3 rounded-xl p-5 shadow-md shadow-zinc-950;
+}
+
+/* .front {
+  @apply bg-red-800;
+} */
+
+.back {
+  @apply bg-zinc-800;
+}
+
+.platform-logo {
+  @apply w-10 rounded-lg shadow shadow-zinc-900;
+}
+
+a > .platform-logo {
+  @apply transition-transform hover:scale-110;
+}
