@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="stylesheet" href="src/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="app" class="h-screen w-full bg-zinc-900 font-light text-white">
+      <div class="flex flex-col items-center justify-center gap-10 px-5 pt-14">
+        <h1>Portfolio</h1>
+
+        <div class="flex gap-10">
+          <div id="tubepen" class="flip h-[400px]">
+            <div class="front bg-red-600">
+              <img class="w-40 transition-transform hover:scale-105" src="public/tubepen_logo.svg" />
+              <div>
+                <h2>TubePen</h2>
+                <span class="text-lg">Plattform to boost YouTube learning</span>
+              </div>
+            </div>
+
+            <div class="back">
+              <a href="https://www.tubepen.com" target="_blank">
+                <img class="w-40 transition-transform hover:scale-105" src="public/tubepen_logo.svg" />
+              </a>
+
+              <div class="flex w-full flex-col gap-4">
+                <div class="flex w-full justify-between">
+                  <div class="flex flex-col items-center gap-2">
+                    <h2>Frontend</h2>
+                    <div class="flex gap-2">
+                      <a href="https://www.typescriptlang.org/" target="_blank">
+                        <img class="platform-logo" title="Typescript" src="public/platforms/typescript.png" />
+                      </a>
+                      <a href="https://react.dev/" target="_blank">
+                        <img class="platform-logo" title="React" src="public/platforms/react.png" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col items-center gap-2">
+                    <h2>Backend</h2>
+                    <div class="flex gap-2">
+                      <a href="https://www.python.org/" target="_blank">
+                        <img class="platform-logo" title="Python" src="public/platforms/python.png" />
+                      </a>
+                      <a href="https://www.djangoproject.com/" target="_blank">
+                        <img class="platform-logo" title="Django" src="public/platforms/django.png"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full justify-between">
+                  <div class="flex flex-col items-center gap-2">
+                    <h2>Server</h2>
+                    <div class="grid grid-cols-2 gap-2">
+                      <a href="https://archlinux.org/" target="_blank">
+                        <img class="platform-logo" title="Arch Linux" src="public/platforms/linux.png"
+                      /></a>
+                      <a href="https://www.docker.com/" target="_blank">
+                        <img class="platform-logo" title="Docker" src="public/platforms/docker.webp"
+                      /></a>
+                      <a href="https://nginx.org/en/" target="_blank">
+                        <img class="platform-logo" title="Nginx" src="public/platforms/nginx.png"
+                      /></a>
+                      <a href="https://www.postgresql.org/" target="_blank">
+                        <img class="platform-logo" title="PostgreSQL" src="public/platforms/postgres.png"
+                      /></a>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col items-center gap-2">
+                    <h2>Checkout</h2>
+                    <a href="https://stripe.com/" target="_blank"
+                      ><img class="platform-logo" title="Stripe" src="public/platforms/stripe.png"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script type="module" src="/src/index.ts"></script> -->
+  </body>
+</html>
