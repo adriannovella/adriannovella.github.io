@@ -45,7 +45,12 @@ h2 {
 
 .flipped > .back {
   /* small hack to prevent unintentional  click on mobile screens */
-  pointer-events: initial; 
+  pointer-events: initial;
+}
+
+/* flipped cards are taller */
+.flipped {
+  height: 400px;
 }
 
 /* extra styles */
