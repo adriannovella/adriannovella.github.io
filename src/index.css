@@ -17,7 +17,7 @@ h2 {
   > .front,
   > .back {
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-duration: 0.8s;
+    transition-duration: 1s;
     transition-property: transform, opacity;
   }
   > .front {
@@ -36,6 +36,16 @@ h2 {
       transform: rotateY(0deg);
     }
   }
+}
+
+/* Protect back side links to be unintentionaly clicked */
+.back {
+  pointer-events: none;
+}
+
+.flipped > .back {
+  /* small hack to prevent unintentional  click on mobile screens */
+  pointer-events: initial; 
 }
 
 /* extra styles */
