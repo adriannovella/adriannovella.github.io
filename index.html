@@ -2,21 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="icon" href="/favicon.png" />
     <link rel="stylesheet" href="src/index.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Adrián Novella</title>
   </head>
-  <body class="bg-gradient-to-tl from-zinc-800 to-zinc-900">
-    <div id="app" class="h-screen w-full font-light text-white">
-      <div class="flex flex-col items-center justify-center gap-10 px-5 pt-14">
-        <h1>Portfolio</h1>
+  <body class="bg-gradient-to-tl from-slate-800 to-neutral-950 bg-fixed font-light text-white">
+    <div
+      id="app"
+      class="flex h-screen w-full gap-20 py-12 max-md:flex-col max-md:items-center lg:justify-center lg:py-28 xl:gap-40"
+    >
+      <div class="flex flex-col gap-8">
+        <h1>Hi, I'm</h1>
+        <div class="flip">
+          <div class="front bg-green-600">
+            <img
+              class="w-32 rounded-full border-2 border-black transition-transform hover:scale-105"
+              src="https://avatars.githubusercontent.com/u/192151096"
+            />
+            <div class="w-full">
+              <h2>Adrián Novella</h2>
+              <span class="text-lg">Full stack developer</span>
+            </div>
+          </div>
 
-        <div class="flex gap-4 max-md:flex-col lg:gap-10">
-          <div id="tubepen" class="flip">
+          <div class="back">
+            <a href="https://github.com/adriannovella" target="_blank">
+              <img
+                class="w-32 rounded-full border-2 border-black transition-transform hover:scale-105"
+                src="https://avatars.githubusercontent.com/u/192151096"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- #region Public projects -->
+      <div class="flex flex-col gap-8">
+        <h1>My public projects</h1>
+        <div class="flex gap-8 max-md:flex-col pb-14">
+          <div id="tubepen" class="flip h-[400px]">
             <div class="front bg-red-600">
               <img class="w-40 transition-transform hover:scale-105" src="public/tubepen_logo.svg" />
-              <div>
+              <div class="w-full">
                 <h2>TubePen</h2>
                 <span class="text-lg">Plattform to boost YouTube learning</span>
               </div>
@@ -88,7 +116,7 @@
           <div id="cardo" class="flip">
             <div class="front bg-purple-600">
               <img class="w-40 transition-transform hover:scale-105" src="public/cardo_logo.svg" />
-              <div>
+              <div class="w-full">
                 <h2>Cardo</h2>
                 <span class="text-lg">Open source desktop podcast client</span>
               </div>
@@ -128,6 +156,7 @@
           </div>
         </div>
       </div>
+      <!-- #endregion -->
     </div>
     <script type="module" src="/src/index.ts"></script>
   </body>
